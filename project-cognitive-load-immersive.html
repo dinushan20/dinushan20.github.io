@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assessing Cognitive Load in Immersive Environments | Research Project</title>
+  <meta
+    name="description"
+    content="8-credit research project on pupillometry-based cognitive-load assessment across desktop and immersive VR environments using SMEQ, LHIPA, IPA, and baseline-corrected pupil change."
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="project-detail-page project-cognitive-load-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html#home" class="logo" aria-label="Homepage">DM</a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="index.html#home" class="nav-link">Home</a>
+        <a href="index.html#projects" class="nav-link active">Projects</a>
+        <a href="index.html#research" class="nav-link">Research</a>
+        <a href="cv.html" class="nav-link">CV</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="project-detail-main">
+    <section class="project-hero-section">
+      <div class="container project-hero-grid project-hero-grid--stacked-title">
+        <div class="project-heading project-hero-title-block reveal">
+          <p class="eyebrow">8-Credit Research Project</p>
+          <h1>Assessing Cognitive Load in Immersive Environments</h1>
+        </div>
+
+        <div class="project-hero-copy reveal">
+          <p class="project-summary">
+            This project evaluated whether pupillometry-based cognitive-load
+            metrics, especially the Low/High Index of Pupillary Activity
+            (LHIPA), can robustly measure workload across desktop and immersive
+            VR environments. Cognitive load was manipulated with 1-back and
+            3-back tasks and compared across multiple eye-tracking setups.
+          </p>
+
+          <dl class="project-meta project-meta-wide">
+            <div class="project-meta-item">
+              <dt>My Role</dt>
+              <dd>Literature research, study conduction, data-processing pipeline, and report contribution</dd>
+            </div>
+            <div class="project-meta-item">
+              <dt>Collaborators</dt>
+              <dd>Christian Thimm, Joshua Wilson</dd>
+            </div>
+            <div class="project-meta-item">
+              <dt>Supervision</dt>
+              <dd>Tobias Wagner, Markus Sasalovici</dd>
+            </div>
+            <div class="project-meta-item">
+              <dt>Domain</dt>
+              <dd>HCI, VR, Cognitive Load, Eye Tracking</dd>
+            </div>
+            <div class="project-meta-item">
+              <dt>Methods</dt>
+              <dd>N-back task, SMEQ, pupillometry, LHIPA, IPA, baseline-corrected pupil change</dd>
+            </div>
+            <div class="project-meta-item">
+              <dt>Devices</dt>
+              <dd>Pupil Labs Neon, Tobii Pro Spark, Meta Quest 3 with integrated Neon</dd>
+            </div>
+            <div class="project-meta-item">
+              <dt>Participants</dt>
+              <dd>18 recruited, 15 analyzed after excluding 3 due to data issues</dd>
+            </div>
+            <div class="project-meta-item">
+              <dt>Project Type</dt>
+              <dd>8-credit university research project</dd>
+            </div>
+          </dl>
+        </div>
+
+        <figure class="project-hero-visual project-hero-figure ai-image-shell reveal">
+          <img
+            src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/cover-image-immersive-env-experiement.png"
+            alt="Illustration of a person wearing a VR headset and holding a controller, representing immersive environments and eye-tracking based cognitive-load assessment."
+          />
+          <span class="ai-image-note">AI-generated image, used for illustrative purposes only.</span>
+        </figure>
+      </div>
+    </section>
+
+    <section class="project-detail-grid-section">
+      <div class="container project-detail-grid">
+        <article class="project-detail-card reveal">
+          <div class="detail-card-head">
+            <span class="detail-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3.25A8.75 8.75 0 1 0 20.75 12 8.76 8.76 0 0 0 12 3.25Zm0 1.5A7.25 7.25 0 1 1 4.75 12 7.26 7.26 0 0 1 12 4.75Z" />
+              </svg>
+            </span>
+            <h2>Research Context</h2>
+          </div>
+          <p>
+            Immersive environments are increasingly used for training, education,
+            and interactive applications, but their sensory and interaction
+            demands can increase cognitive load. This makes reliable workload
+            measurement important when comparing VR and non-VR conditions.
+          </p>
+        </article>
+
+        <article class="project-detail-card reveal">
+          <div class="detail-card-head">
+            <span class="detail-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7A2.5 2.5 0 0 1 17.5 16H13l-2.6 2.1a.75.75 0 0 1-1.22-.58V16H6.5A2.5 2.5 0 0 1 4 13.5Z" />
+              </svg>
+            </span>
+            <h2>Research Question</h2>
+          </div>
+          <p>
+            The central question was whether LHIPA can act as a robust,
+            device-independent workload measure across desktop and immersive VR
+            setups rather than only under one specific recording condition.
+          </p>
+        </article>
+
+        <article class="project-detail-card reveal">
+          <div class="detail-card-head">
+            <span class="detail-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="m4.75 15.5 4-4 2.5 2.5 5-5 3 3-1.06 1.06-1.94-1.94-5 5-2.5-2.5-2.94 2.94Z" />
+              </svg>
+            </span>
+            <h2>Experimental Design</h2>
+          </div>
+          <p>
+            Participants completed 1-back and 3-back tasks in three setups:
+            desktop with head-mounted Pupil Labs Neon, desktop with stationary
+            Tobii Pro Spark, and immersive VR with Meta Quest 3 and integrated
+            Neon.
+          </p>
+        </article>
+
+        <article class="project-detail-card reveal">
+          <div class="detail-card-head">
+            <span class="detail-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M6 3.75h9.5L20.25 8.5V19A1.75 1.75 0 0 1 18.5 20.75h-12A1.75 1.75 0 0 1 4.75 19V5.5A1.75 1.75 0 0 1 6.5 3.75Z" />
+              </svg>
+            </span>
+            <h2>My Contribution</h2>
+          </div>
+          <p>
+            My contribution focused on literature research, partial support in the research design, study conduction, and the data-processing pipeline. I helped run participant sessions and worked on transforming raw task logs, SMEQ responses, and eye-tracking recordings into an analysis-ready dataset, including calculated SMEQ, LHIPA, IPA, and PupilDiff measures for later statistical analysis.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading section-heading-compact reveal">
+          <h2>Study Design</h2>
+        </div>
+
+        <div class="section-copy reveal">
+          <p>
+            Participants first received a briefing, signed informed consent,
+            and practiced the N-back task until they were comfortable with
+            the procedure. The main experiment was then completed in three
+            environments: desktop with head-mounted Neon, desktop with Tobii
+            Pro Spark, and immersive VR with Meta Quest 3 and integrated
+            Neon.
+          </p>
+          <p>
+            Within each environment, participants completed both 1-back and
+            3-back conditions. Each task block included a 30-second baseline,
+            followed by the task while gaze and pupil data were recorded.
+            After each block, participants completed the SMEQ mental-effort
+            rating, and demographic data were collected after the experiment.
+          </p>
+          <p>
+            Environment order was counterbalanced as far as scheduling
+            allowed. The 1-back and 3-back order was also counterbalanced,
+            and task positions rotated across upper-left, center, and
+            bottom-right placements.
+          </p>
+        </div>
+
+        <div class="study-design-figure-row reveal">
+          <figure class="report-figure study-design-main-figure">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/Experiment_Procedure.png"
+              alt="Experiment procedure diagram showing initial briefing, informed consent, training, three recording setups, N-back task blocks, SMEQ reporting, and post-experiment demographic questionnaire."
+            />
+            <figcaption>
+              Experiment procedure showing initial preparation, the three
+              recording setups, N-back task blocks, SMEQ reporting, and
+              post-experiment measures.
+            </figcaption>
+          </figure>
+
+          <figure class="report-figure study-design-task-figure">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/Task_Order.png"
+              alt="Task-order figure showing upper-left, center, and bottom-right positions with alternating 30-second baselines and task blocks."
+            />
+            <figcaption>
+              Task order with baseline and in-task phases across
+              upper-left, center, and bottom-right positions.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="fact-grid">
+          <article class="fact-card reveal">
+            <h3>Participant Flow</h3>
+            <p>18 participants were recruited, and 15 were included in the final analysis after excluding 3 due to data issues.</p>
+          </article>
+          <article class="fact-card reveal">
+            <h3>Three Recording Setups</h3>
+            <p>Desktop + Pupil Labs Neon, Desktop + Tobii Pro Spark, and VR + Meta Quest 3 with integrated Neon.</p>
+          </article>
+          <article class="fact-card reveal">
+            <h3>Counterbalancing</h3>
+            <p>Environment order was balanced as far as scheduling allowed, while N-back order and task positions were counterbalanced across participants.</p>
+          </article>
+          <article class="fact-card reveal">
+            <h3>Block Structure</h3>
+            <p>Each position started with a 30-second baseline and then the N-back task, with responses collected by button press and SMEQ completed afterward.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading section-heading-compact reveal">
+          <h2>Measures</h2>
+        </div>
+
+        <div class="content-split-grid">
+          <div class="section-copy reveal">
+            <p>
+              The project combines a subjective workload measure with
+              pupil-based objective measures so that perceived effort and
+              physiological patterns can be interpreted together rather than in
+              isolation.
+            </p>
+            <p>
+              LHIPA is a wavelet-based metric derived from pupil-diameter
+              oscillations. In this report it is treated as the main
+              pupillometry measure of interest, while IPA and baseline-corrected
+              pupil change were used as complementary signals for comparison.
+            </p>
+          </div>
+
+          <figure class="report-figure reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/lhipa-value-calculation-diagram.png"
+              alt="Simplified diagram of LHIPA calculation from raw pupil signal through time-window analysis to a final workload score."
+            />
+            <figcaption>
+              Simplified explanation figure from the report showing how LHIPA is
+              derived from changes in the pupil signal over time.
+            </figcaption>
+          </figure>
+        </div>
+
+        <div class="measures-grid">
+          <article class="measure-card reveal">
+            <h3>Subjective Measure</h3>
+            <p>
+              SMEQ was used after each task block to capture perceived mental
+              effort directly from participants.
+            </p>
+          </article>
+
+          <article class="measure-card reveal">
+            <h3>Pupil-Based Primary Measure</h3>
+            <p>
+              LHIPA was the main workload metric. It is a wavelet-based measure
+              expected to change with cognitive load and was used to compare
+              desktop and immersive recordings.
+            </p>
+          </article>
+
+          <article class="measure-card reveal">
+            <h3>Complementary Pupil Measures</h3>
+            <p>
+              IPA and baseline-corrected pupil diameter change (PupilDiff) were
+              analyzed alongside LHIPA to provide additional perspectives on
+              task-evoked workload.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading section-heading-compact reveal">
+          <h2>Data Preprocessing</h2>
+        </div>
+
+        <div class="section-copy reveal">
+          <p>
+            A major part of the project was turning noisy, multi-device
+            recordings into analysis-ready data. The report makes clear that
+            physiological HCI data is not simply collected and plotted: it has
+            to be synchronized, segmented, cleaned, and normalized before any
+            interpretation becomes meaningful.
+          </p>
+          <p>
+            This preprocessing pipeline was especially important here because
+            Tobii Pro Spark and Pupil Labs Neon recorded at different sampling
+            rates and the analysis depended on consistent segmentation across
+            baseline and task phases.
+          </p>
+        </div>
+
+        <figure class="report-figure preprocessing-figure reveal">
+          <img
+            src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/Data_Pipeline_Diagram.png"
+            alt="Data preprocessing diagram showing alignment, segmentation, blink removal, 60 Hz resampling, metric computation, and final merged analysis table."
+          />
+          <figcaption>
+            Preprocessing pipeline for aligning gaze data, cleaning
+            blinks, resampling to 60 Hz, and computing LHIPA, IPA, and
+            PupilDiff.
+          </figcaption>
+        </figure>
+
+        <ol class="pipeline-list reveal">
+          <li>Correct and standardize file names.</li>
+          <li>Align raw gaze recordings with Unity and task event timestamps.</li>
+          <li>Split gaze streams into baseline and task segments.</li>
+          <li>Remove blinks and invalid pupil samples.</li>
+          <li>Remove a 100 ms margin before and after blinks.</li>
+          <li>Resample pupil data to 60 Hz to make Tobii and Neon recordings comparable.</li>
+          <li>Compute LHIPA, IPA, and baseline-corrected pupil-difference values.</li>
+          <li>Merge all measures into a long-format table for statistical analysis.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading section-heading-compact reveal">
+          <h2>Selected Results</h2>
+        </div>
+
+        <div class="section-copy reveal">
+          <p>
+            The figures below summarize the main subjective and
+            pupil-based observations. SMEQ was used to confirm the
+            workload manipulation, while LHIPA, IPA, and PupilDiff
+            were compared across environments, task difficulty, and
+            task position.
+          </p>
+        </div>
+
+        <div class="project-gallery results-gallery">
+          <figure class="project-gallery-card project-gallery-card--contain reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/SMEQ_nback_comparison.png"
+              alt="Bar chart comparing SMEQ ratings for 1-back and 3-back conditions."
+            />
+            <figcaption>SMEQ ratings were higher for 3-back than 1-back, confirming the subjective workload manipulation.</figcaption>
+          </figure>
+
+          <figure class="project-gallery-card project-gallery-card--contain reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/LHIPA_Point_Plot_Full.png"
+              alt="Full environment comparison plot of LHIPA values across task conditions."
+            />
+            <figcaption>Full LHIPA comparison across environments, including the noisier stationary Tobii setup.</figcaption>
+          </figure>
+
+          <figure class="project-gallery-card project-gallery-card--contain reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/LHIPA_Point_Plot_Neon.png"
+              alt="LHIPA comparison plot restricted to Neon-based desktop and VR recordings."
+            />
+            <figcaption>LHIPA comparison restricted to Neon-based desktop and VR recordings, where patterns were more stable.</figcaption>
+          </figure>
+
+          <figure class="project-gallery-card project-gallery-card--contain reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/IPA_Point_Plot.png"
+              alt="IPA comparison plot across environments and task conditions."
+            />
+            <figcaption>IPA comparison used as a complementary pupil-based workload measure.</figcaption>
+          </figure>
+
+          <figure class="project-gallery-card project-gallery-card--contain reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/PupilDiff_Point_Plot.png"
+              alt="Baseline-corrected pupil difference comparison across environments and task conditions."
+            />
+            <figcaption>Baseline-corrected pupil change used as another view of task-evoked workload.</figcaption>
+          </figure>
+
+          <figure class="project-gallery-card project-gallery-card--contain reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/LHIPA_positional_impact.png"
+              alt="Combined positional impact plot for LHIPA under 1-back and 3-back conditions."
+            />
+            <figcaption>LHIPA positional impact for n1 and n3, showing how gaze/task position may influence the metric.</figcaption>
+          </figure>
+
+          <figure class="project-gallery-card project-gallery-card--contain reveal">
+            <img
+              src="assets/Assessing_Cognitive_Load_in_Immersive_Environments/PupilDiff_positional_impact.png"
+              alt="Combined positional impact plot for baseline-corrected pupil difference under 1-back and 3-back conditions."
+            />
+            <figcaption>PupilDiff positional impact for n1 and n3, showing sensitivity to task position and environment.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading section-heading-compact reveal">
+          <h2>Main Observations</h2>
+        </div>
+
+        <div class="section-copy reveal">
+          <p>
+            The report presents these findings carefully. The patterns are
+            informative, but they are discussed as evidence-based observations
+            rather than as final proof of a universally robust workload metric.
+          </p>
+        </div>
+
+        <div class="observations-grid">
+          <article class="observation-card reveal">
+            <h3>Subjective Workload Increased as Intended</h3>
+            <p>
+              SMEQ ratings were consistently higher for 3-back than for 1-back,
+              suggesting that the task manipulation successfully increased
+              perceived workload.
+            </p>
+          </article>
+
+          <article class="observation-card reveal">
+            <h3>LHIPA Showed Clearer Patterns in Neon-Based Setups</h3>
+            <p>
+              In the desktop Neon and VR Neon recordings, LHIPA decreased with
+              increasing task difficulty, which suggests that the metric may be
+              promising when the underlying pupil signal is cleaner.
+            </p>
+          </article>
+
+          <article class="observation-card reveal">
+            <h3>Tobii Data Was More Fragile</h3>
+            <p>
+              The stationary Tobii setup showed substantial noise and outliers,
+              which made the derived LHIPA values less reliable and reduced
+              confidence in direct cross-device comparison.
+            </p>
+          </article>
+
+          <article class="observation-card reveal">
+            <h3>Preprocessing Strongly Shapes Interpretability</h3>
+            <p>
+              The analysis suggests that immersive pupillometry can be useful,
+              but robustness depends on blink handling, missing-data treatment,
+              and the way sampling-rate differences are managed.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-heading section-heading-compact reveal">
+          <h2>Discussion &amp; Critical Reflection</h2>
+        </div>
+
+        <div class="observations-grid">
+          <article class="observation-card reveal">
+            <h3>LHIPA Can Be Informative</h3>
+            <p>
+              Across the Neon-based setups, LHIPA showed patterns that appear
+              consistent with increased cognitive load, which makes it a useful
+              candidate for immersive workload assessment.
+            </p>
+          </article>
+
+          <article class="observation-card reveal">
+            <h3>Reliability Depends on Signal Quality</h3>
+            <p>
+              The report notes that LHIPA can break down when the pupil signal
+              contains many blinks or missing samples, and that sampling-rate
+              differences across devices matter for a fair comparison.
+            </p>
+          </article>
+
+          <article class="observation-card reveal">
+            <h3>Complementary Metrics Matter</h3>
+            <p>
+              PupilDiff provided additional information, but it appeared more
+              sensitive to positional effects. This reinforces the value of
+              combining subjective and objective measures rather than relying on
+              a single signal.
+            </p>
+          </article>
+
+          <article class="observation-card reveal">
+            <h3>Future Work</h3>
+            <p>
+              A natural next step is improving blink and missing-data handling
+              and evaluating robustness across devices and environments with
+              more stable recording conditions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="takeaways-section research-value-section">
+      <div class="container">
+        <article class="takeaway-card reveal">
+          <div class="detail-card-head">
+            <span class="detail-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3.5a6.75 6.75 0 0 0-4.72 11.57c.53.52 1.04 1.28 1.27 2.18h6.9c.22-.9.73-1.66 1.26-2.18A6.75 6.75 0 0 0 12 3.5Zm-2.05 14.5h4.1v1.25a.75.75 0 0 1-.75.75h-2.6a.75.75 0 0 1-.75-.75Z" />
+              </svg>
+            </span>
+            <h2>Research Value</h2>
+          </div>
+
+          <p>
+            This project demonstrates how cognitive-load research in immersive
+            environments requires a careful connection between experimental design,
+            physiological data collection, preprocessing, and cautious interpretation
+            of subjective and pupil-based workload measures.
+          </p>
+
+          <ul class="takeaway-list">
+            <li>Experience with experimental HCI methodology.</li>
+            <li>Comparison of VR and non-VR conditions in a controlled study setup.</li>
+            <li>Work with eye-tracking and pupillometry data.</li>
+            <li>Development of a preprocessing pipeline for noisy physiological signals.</li>
+            <li>Integration of subjective and objective workload measures.</li>
+            <li>Critical evaluation of measurement reliability across devices and environments.</li>
+            <li>Relevance to HCI, VR, cognitive load, adaptive systems, and human-centered intelligent interfaces.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section project-tags-section">
+      <div class="container">
+        <div class="section-heading section-heading-compact reveal">
+          <h2>Tools &amp; Methods</h2>
+        </div>
+
+        <div class="project-tag-list reveal" aria-label="Tools and methods">
+          <span class="project-tag">HCI</span>
+          <span class="project-tag">Virtual Reality</span>
+          <span class="project-tag">Cognitive Load</span>
+          <span class="project-tag">Eye Tracking</span>
+          <span class="project-tag">Pupillometry</span>
+          <span class="project-tag">LHIPA</span>
+          <span class="project-tag">IPA</span>
+          <span class="project-tag">SMEQ</span>
+          <span class="project-tag">N-back Task</span>
+          <span class="project-tag">Meta Quest 3</span>
+          <span class="project-tag">Pupil Labs Neon</span>
+          <span class="project-tag">Tobii Pro Spark</span>
+          <span class="project-tag">Python</span>
+          <span class="project-tag">Data Preprocessing</span>
+          <span class="project-tag">Physiological Data Analysis</span>
+          <span class="project-tag">Human-Subject Study</span>
+          <span class="project-tag">Research Methods</span>
+          <span class="project-tag">Unity</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="takeaways-section">
+      <div class="container">
+        <article class="takeaway-card reveal">
+          <div class="detail-card-head">
+            <span class="detail-card-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24">
+                <path d="M12 3.5a6.75 6.75 0 0 0-4.72 11.57c.53.52 1.04 1.28 1.27 2.18h6.9c.22-.9.73-1.66 1.26-2.18A6.75 6.75 0 0 0 12 3.5Zm-2.05 14.5h4.1v1.25a.75.75 0 0 1-.75.75h-2.6a.75.75 0 0 1-.75-.75Z" />
+              </svg>
+            </span>
+            <h2>What this project taught me</h2>
+          </div>
+
+          <ul class="takeaway-list">
+            <li>Cognitive-load measurement in VR benefits from combining subjective and physiological measures.</li>
+            <li>Pupil-based metrics are promising, but device quality and preprocessing strongly affect reliability.</li>
+            <li>LHIPA may be useful for immersive workload assessment when blinks and missing data are handled robustly.</li>
+            <li>Research in immersive environments requires careful synchronization, experimental control, and cautious interpretation.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="project-pagination">
+      <div class="container project-pagination-inner">
+        <a class="project-nav-link" href="index.html#projects">
+          <span aria-hidden="true">←</span>
+          Back to Projects
+        </a>
+        <a class="project-nav-link" href="project-trust-calibration.html">
+          Next Project: Trust Calibration HiTL MOBO
+          <span aria-hidden="true">→</span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <section id="contact" class="container footer-shell reveal">
+      <div class="footer-column">
+        <p class="footer-title">Navigation</p>
+        <a href="index.html#home">Home</a>
+        <a href="index.html#projects">Projects</a>
+        <a href="index.html#research">Research</a>
+        <a href="cv.html">CV</a>
+        <a href="index.html#contact">Contact</a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-title">Get in touch</p>
+        <a href="mailto:dinushanmeeriyagalla20@gmail.com">dinushanmeeriyagalla20@gmail.com</a>
+        <a
+          href="https://linkedin.com/in/dinushanm"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          linkedin.com/in/dinushanm
+        </a>
+        <a
+          href="https://github.com/dinushan20"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          github.com/dinushan20
+        </a>
+      </div>
+
+      <div class="footer-column">
+        <p class="footer-title">About</p>
+        <p>
+          I'm always open to discussing research projects, doctoral
+          opportunities, and collaborative work at the intersection of HCI and
+          intelligent systems.
+        </p>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2024 Dinushan Meeriyagalla. All rights reserved.</p>
+        <a class="back-to-top" href="#main" aria-label="Back to top">↑</a>
+      </div>
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
