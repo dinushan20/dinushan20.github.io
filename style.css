@@ -2184,8 +2184,19 @@ select {
   }
 
   .hero-grid,
-  .footer-shell {
+  .footer-shell,
+  .project-hero-grid,
+  .project-hero-grid--stacked-title {
     grid-template-columns: 1fr;
+  }
+
+  .project-hero-copy,
+  .project-hero-visual {
+    width: 100%;
+  }
+
+  .project-hero-visual {
+    justify-self: stretch;
   }
 
   .project-detail-grid,
