@@ -6,14 +6,21 @@
   <title>Dinushan Meeriyagalla | HCI Researcher &amp; UX Engineer</title>
   <meta
     name="description"
-    content="Portfolio of Dinushan Meeriyagalla, a Cognitive Systems master's student at Ulm University focused on HCI, UX engineering, human-AI interaction, and front-end development."
+    content="Portfolio of Dinushan Meeriyagalla, an MSc Cognitive Systems candidate at Ulm University focused on immersive HCI, VR/XR, automotive HCI, trust calibration, and UX engineering."
   />
+  <meta property="og:title" content="Dinushan Meeriyagalla | HCI Researcher &amp; UX Engineer" />
+  <meta
+    property="og:description"
+    content="Portfolio of Dinushan Meeriyagalla, an MSc Cognitive Systems candidate working across immersive HCI, VR/XR, automotive HCI, trust calibration, and UX engineering."
+  />
+  <meta property="og:type" content="website" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link
     href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap"
     rel="stylesheet"
   />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -54,19 +61,22 @@
           </p>
 
           <p class="hero-text">
-            <strong>Master’s student in Cognitive Systems at Ulm University.</strong> <br>
-            I design and build human-centered interactive systems at the intersection of
-            research, design, and technology.
+            <strong>MSc Cognitive Systems candidate at Ulm University.</strong> <br>
+            I design, implement, and evaluate interactive systems in virtual reality,
+            automated driving, and immersive simulation.
+          </p>
+
+          <p class="hero-text">
+            Currently exploring PhD, research, UX engineering, HMI, and immersive-systems
+            opportunities beginning in late 2026.
           </p>
 
           <div class="hero-actions">
             <a
               class="btn btn-primary"
-              href="assets/Dinushan_Meeriyagalla_CV.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="cv.html"
             >
-              Download CV
+              View Academic &amp; Industry CVs
             </a>
 
             <a class="btn btn-secondary" href="#projects">
@@ -105,11 +115,11 @@
         </div>
 
         <div class="hero-media reveal">
-          <div class="portrait-panel">
+          <div class="portrait-panel portrait-panel--cutout">
             <div class="portrait-fallback" aria-hidden="true">DM</div>
             <img
-              src="assets/reference-portrait.png"
-              alt="Portrait of Dinushan Meeriyagalla"
+              src="assets/dinushan_side_looking_portrait_transparent.png"
+              alt="Side-looking portrait of Dinushan Meeriyagalla"
               class="portrait-img"
             />
           </div>
@@ -125,12 +135,13 @@
             Areas I am particularly interested in.
           </p>
           <div class="focus-interest-grid" aria-label="Research interests">
-            <div class="focus-interest-card">Human-Computer Interaction</div>
-            <div class="focus-interest-card">Human-AI Interaction</div>
-            <div class="focus-interest-card">Cognitive Load and Physiological HCI</div>
-            <div class="focus-interest-card">AR/VR/XR and Immersive Simulation</div>
-            <div class="focus-interest-card">Adaptive Interfaces and Computational Interaction</div>
-            <div class="focus-interest-card">Trust and Transparency in Intelligent Systems</div>
+            <div class="focus-interest-card">Immersive HCI and VR/XR</div>
+            <div class="focus-interest-card">Human-vehicle interaction and automotive HCI</div>
+            <div class="focus-interest-card">Human factors, cognitive load, and workload</div>
+            <div class="focus-interest-card">Interactive simulation</div>
+            <div class="focus-interest-card">Trust calibration and human-AI interaction</div>
+            <div class="focus-interest-card">Adaptive interfaces</div>
+            <div class="focus-interest-card">Physiological and behavioral measures in HCI</div>
           </div>
         </article>
       </div>
@@ -145,6 +156,51 @@
 
         <div class="project-grid">
 
+          <a
+            class="project-card project-card-link reveal"
+            href="project-vehicle-motion-simulation.html"
+            aria-label="Open Comparison of Vehicle Motion Simulation in Virtual Reality Across the Motion-Fidelity Continuum thesis page"
+          >
+            <div class="project-image ai-image-shell">
+              <span class="project-status-chip">Master’s Thesis · Ongoing</span>
+              <img
+                src="assets/cover-image-low-cost-driving_sim_comparison.png"
+                alt="Illustration representing vehicle motion simulation across the motion-fidelity continuum in virtual reality"
+              />
+              <span class="ai-image-note">AI-generated image, used for illustrative purposes only.</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">Master&apos;s Thesis</p>
+              <h3>Vehicle Motion Simulation Across the Motion-Fidelity Continuum</h3>
+              <p>
+                Comparing four levels of vehicle-motion simulation through an immersive HCI study combining Unity/C# development, physical simulator integration, human factors, and user evaluation.
+              </p>
+            </div>
+          </a>
+
+          <a
+            class="project-card project-card-link reveal"
+            href="project-trust-calibration.html"
+            aria-label="Open Trust Calibration HITL-MOBO project page"
+          >
+            <div class="project-image ai-image-shell">
+              <span class="project-status-chip">Data Collection Completed</span>
+              <img
+                src="assets/cover-image-trust-calibration.png"
+                alt="Illustration of automated-driving trust calibration concepts with augmented traffic cues and highlighted roadway context"
+              />
+              <span class="ai-image-note">AI-generated image, used for illustrative purposes only.</span>
+            </div>
+
+            <div class="project-body">
+              <p class="project-type">Research Project</p>
+              <h3>Trust Calibration with Human-in-the-Loop Multi-Objective Bayesian Optimization</h3>
+              <p>
+                Human-in-the-loop study investigating adaptive augmented-visualization feedback for trust calibration in automated driving. Data collection is complete; analysis and research-output preparation are ongoing.
+              </p>
+            </div>
+          </a>
 
           <a
             class="project-card project-card-link reveal"
@@ -191,50 +247,6 @@
               </p>
             </div>
           </a>
-
-          <a
-          class="project-card project-card-link reveal"
-          href="project-trust-calibration.html"
-          aria-label="Open Trust Calibration HiTL MOBO project page"
-        >
-          <div class="project-image ai-image-shell">
-            <span class="project-status-chip">Ongoing</span>
-            <img
-              src="assets/cover-image-trust-calibration.png"
-              alt="Illustration of automated-driving trust calibration concepts with augmented traffic cues and highlighted roadway context"
-            />
-            <span class="ai-image-note">AI-generated image, used for illustrative purposes only.</span>
-          </div>
-
-          <div class="project-body">
-            <p class="project-type">Research Project</p>
-            <h3>Trust Calibration HITL MOBO</h3>
-            <p>
-              Ongoing research for adaptive augmented-visualization
-              feedback in automated driving videos.
-            </p>
-          </div>
-        </a>
-
-          <article class="project-card reveal">
-            <div class="project-image ai-image-shell">
-              <span class="project-status-chip">Ongoing</span>
-              <img
-                src="assets/cover-image-low-cost-driving_sim_comparison.png"
-                alt="Illustration comparing low-cost VR vehicle motion simulator concepts for driving simulation research"
-              />
-              <span class="ai-image-note">AI-generated image, used for illustrative purposes only.</span>
-            </div>
-
-            <div class="project-body">
-              <p class="project-type">Master&apos;s Thesis</p>
-              <h3>Comparing Low-Cost VR Vehicle Motion Simulators</h3>
-              <p>
-                Ongoing master&apos;s thesis comparing accessible VR vehicle motion
-                simulator setups for immersive driving-related research and evaluation.
-              </p>
-            </div>
-          </article>
 
         </div>
       </div>
