@@ -1,14 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="DM">
-  <rect width="64" height="64" rx="14" fill="#171614"/>
-  <text
-    x="50%"
-    y="52%"
-    dominant-baseline="middle"
-    text-anchor="middle"
-    fill="#fffdfb"
-    font-family="Manrope, Arial, sans-serif"
-    font-size="24"
-    font-weight="800"
-    letter-spacing="0"
-  >DM</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dinushan Meeriyagalla">
+<rect width="64" height="64" fill="#151515"/>
+<text x="50%" y="51%" text-anchor="middle" dominant-baseline="middle" fill="#fff" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="800" letter-spacing="-2">D/M</text>
 </svg>
